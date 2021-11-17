@@ -1,1 +1,1 @@
-# cm523-project-starter
+# CM523 Project Starter
