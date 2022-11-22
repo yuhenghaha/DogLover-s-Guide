@@ -4,3 +4,6 @@
 body {
     background: magenta;
 }
+p {
+    font-size: 2em;
+}
