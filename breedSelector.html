@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breed Selector</title>
+    <meta name="description" content="DogLover's Guide Breed Selector" />
+    <link rel="stylesheet" href="styles.normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="headerOuter">
+      <div class="header2">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li class="active">
+            <a href="./breedSelector.html">Breed Selector</a>
+          </li>
+          <li><a href="./breedInformation.html">Breed Information</a></li>
+          <li><a href="./additionalResources.html">Additional Resources</a></li>
+        </ul>
+      </div>
+      <div class="header">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+            <img class="menuIcon" src="./images/icon4.png" alt="" />
+          </li>
+          <li class="active">
+            <a href="./breedSelector.html">Breed Selector</a>
+          </li>
+          <li><a href="./breedInformation.html">Breed Information</a></li>
+          <li><a href="./additionalResources.html">Additional Resources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bannerOuter">
+      <div class="banner2 banner">
+        <h2>Breed Selector</h2>
+      </div>
+    </div>
+    <div class="text">
+      <p>
+        Welcome to the Breed Selector, a feature thoughtfully crafted to guide
+        you toward finding your ideal canine companion. Our interactive tool is
+        designed to match you with dog breeds that best align with your
+        lifestyle, living space, and activity level, ensuring that your new
+        friend feels right at home with you.
+      </p>
+      <p>Heres how it works:</p>
+      <ul class="list">
+        <li>
+          <p>
+            Begin the Journey: Click on Take The Quiz Now to initiate your
+            personalized breed selection experienc.
+          </p>
+        </li>
+        <li>
+          <p>
+            Answer with Care: Respond to a series of carefully curated
+            questions. Each one is a stepping stone towards pinpointing the
+            breed that suits your daily routine, space, and personal
+            preferences.
+          </p>
+        </li>
+        <li>
+          <p>
+            Discover Your Matches: Upon completing the quiz, we will present you
+            with a selection of dogs that meet your criteria.
+          </p>
+        </li>
+        <li>
+          <p>
+            Explore Your Options: You ll receive a list of potential breeds. If
+            a particular breed piques your interest, simply click on Find Out
+            More About Your Breed Choice to delve into detailed information
+            about their traits, care needs, and whether they're the right fit
+            for your home environment.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="content2 w1200">
+      <div class="find">
+        <h2>Find Your Perfect Dog Breed!</h2>
+        <div class="btn">Take The Quiz Now</div>
+      </div>
+    </div>
+    <div class="linkBtn">
+      <a href="./breedInformation.html">
+        <div class="btn2">Find Out More About Your Breed Choice</div>
+      </a>
+    </div>
+
+    <div class="questionBox">
+      <div class="questionCenter">
+        <div class="question">
+          <h2>What's Your Favorite Color?</h2>
+          <div class="radios">
+            <input type="radio" name="question1" value="option1" />
+            Option 1
+            <input type="radio" name="question1" value="option2" />
+            Option 2
+            <input type="radio" name="question1" value="option3" />
+            Option 3
+          </div>
+        </div>
+        <div class="question">
+          <h2>What's Your Favorite Color?</h2>
+          <div class="radios">
+            <input type="radio" name="question2" value="option1" />
+            Option 1
+            <input type="radio" name="question2" value="option2" />
+            Option 2
+            <input type="radio" name="question2" value="option3" />
+            Option 3
+          </div>
+        </div>
+        <div class="question">
+          <h2>What's Your Favorite Color?</h2>
+          <div class="radios">
+            <input type="radio" name="question3" value="option1" />
+            Option 1
+            <input type="radio" name="question3" value="option2" />
+            Option 2
+            <input type="radio" name="question3" value="option3" />
+            Option 3
+          </div>
+        </div>
+        <div class="question">
+          <h2>What's Your Favorite Color?</h2>
+          <div class="radios">
+            <input type="radio" name="question4" value="option1" />
+            Option 1
+            <input type="radio" name="question4" value="option2" />
+            Option 2
+            <input type="radio" name="question4" value="option3" />
+            Option 3
+          </div>
+        </div>
+        <div class="btn submit">Submit</div>
+      </div>
+    </div>
+    <div class="bestChioceBox">
+      <div class="bestChioceCenter">
+        <div class="bestChioce">
+          <h2>Your Best Choice</h2>
+          <div class="tit">Chihuahua</div>
+          <p>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>DESIGNED BY YUHENG (VERA) SUN</p>
+      <p>PHOTO CREDITS: GETTY IMAGES</p>
+      <p>DOG BREED INFORMATION CREDITS: AMERICAN KENNEL CLUB</p>
+    </div>
+  </body>
+  <script>
+    var menuIcon = document.querySelector(".menuIcon");
+    var header = document.querySelector(".header");
+    var body = document.querySelector(".body");
+    menuIcon.addEventListener("click", () => {
+      if (header.style.height === "200px") {
+        header.style.height = "40px";
+      } else {
+        header.style.height = "200px";
+      }
+    });
+
+    var questionBox = document.querySelector(".questionBox");
+    var bestChioceBox = document.querySelector(".bestChioceBox");
+    var btn = document.querySelector(".btn");
+    var btn2 = document.querySelector(".btn2");
+    var submit = document.querySelector(".submit");
+
+    btn.addEventListener("click", (e) => {
+      questionBox.style.display = "block";
+    });
+
+    questionBox.addEventListener("click", (e) => {
+      if (e.target.classList[0] === "questionBox") {
+        questionBox.style.display = "none";
+      }
+    });
+
+    submit.addEventListener("click", (e) => {
+      bestChioceBox.style.display = "block";
+      setTimeout(() => {
+        bestChioceBox.style.display = "none";
+        questionBox.style.display = "none";
+        btn2.style.display = "inline-block";
+      }, 1000);
+    });
+  </script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breed Information</title>
+    <meta name="description" content="DogLover's Guide Breed Information" />
+    <link rel="stylesheet" href="styles.normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="headerOuter">
+      <div class="header2">
+        <ul>
+          <li ><a href="./index.html">Home</a></li>
+          <li><a href="./breedSelector.html">Breed Selector</a></li>
+          <li><a href="./breedInformation.html">Breed Information</a></li>
+          <li class="active"><a href="./additionalResources.html">Additional Resources</a></li>
+        </ul>
+      </div>
+      <div class="header">
+        <ul>
+          <li >
+            <a href="./index.html">Home</a>
+            <img class="menuIcon" src="./images/icon4.png" alt="" />
+          </li>
+          <li><a href="./breedSelector.html">Breed Selector</a></li>
+          <li><a href="./breedInformation.html">Breed Information</a></li>
+          <li class="active"><a href="./additionalResources.html">Additional Resources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bannerOuter">
+      <div class="banner1 banner">
+        <h2>Additional Resources</h2>
+      </div>
+    </div>
+    <div class="text">
+      <p>
+        Discover a treasure trove of canine wisdom and support on our Additional Resources page. Whether you're a seasoned dog owner or a 
+        newcomer to the world of canine companionship, here you'll find a handpicked selection of tools, guides, and communities to enrich 
+        your journey.
+      </p>
+    </div>
+    <div class="content1">
+      <ul class="w1200">
+        <li>
+          <div class="img">
+            <a href="./breedSelector.html">
+              <img src="./images/img1.jpg" alt="E-books" />
+            </a>
+          </div>
+          <p>1、xxxxxxxxxx</p>
+          <p>2、xxxxxxxxxx</p>
+          <p>3、xxxxxxxxxx</p>
+          <p>4、xxxxxxxxxx</p>
+        </li>
+        <li>
+          <div class="img">
+            <a href="./breedSelector.html">
+              <img src="./images/img1.jpg" alt="Certified Dog Training Programs" />
+            </a>
+          </div>
+          <p>1、xxxxxxxxxx</p>
+          <p>2、xxxxxxxxxx</p>
+          <p>3、xxxxxxxxxx</p>
+          <p>4、xxxxxxxxxx</p>
+        </li>
+        <li>
+          <div class="img">
+            <a href="./breedSelector.html">
+              <img src="./images/img1.jpg" alt="Adoption and Rescue Centers" />
+            </a>
+          </div>
+          <p>1、xxxxxxxxxx</p>
+          <p>2、xxxxxxxxxx</p>
+          <p>3、xxxxxxxxxx</p>
+          <p>4、xxxxxxxxxx</p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>DESIGNED BY YUHENG (VERA) SUN</p>
+      <p>PHOTO CREDITS: GETTY IMAGES</p>
+      <p>DOG BREED INFORMATION CREDITS: AMERICAN KENNEL CLUB</p>
+    </div>
+  </body>
+  <script>
+   var menuIcon = document.querySelector(".menuIcon");
+    var header = document.querySelector(".header");
+    var body = document.querySelector(".body");
+    menuIcon.addEventListener("click", () => {
+      if (header.style.height === "200px") {
+        header.style.height = "40px";
+      } else {
+        header.style.height = "200px";
+      }
+    });
+  </script>
+</html>

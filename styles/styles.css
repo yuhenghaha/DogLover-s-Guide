@@ -1,9 +1,350 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
-body {
-    background: magenta;
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-p {
-    font-size: 2em;
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: #f6fcff;
+  font-family: Cabin;
+}
+
+.headerOuter {
+  background-color: #2db9ff;
+}
+
+.header {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+
+.header ul a {
+  color: #fff;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+}
+
+.header ul .active a {
+  color: #000;
+  text-align: center;
+  background-color: #ade4ff;
+}
+
+.header {
+  display: none;
+}
+
+.header2 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  line-height: 60px;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.header2 .active a {
+  color: #000;
+  background-color: #ade4ff;
+}
+
+.header2 ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header2 ul li {
+  width: 100%;
+  height: 100%;
+}
+
+.header2 ul a {
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.header2 ul a:hover {
+  background: #ade4ff;
+  color: #000;
+}
+
+.banner {
+  width: 1160px;
+  height: 450px;
+  background-size: cover;
+}
+
+.bannerOuter {
+  padding: 20px;
+  width: 1200px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.banner1 {
+  background-image: url(../images/Dog-snowdrops.jpg);
+}
+
+.banner2 {
+  background-image: url(../images/Dog-snowdrops.jpg);
+}
+
+.banner3 {
+  background-image: url(../images/Dog-snowdrops.jpg);
+}
+
+.banner4 {
+  background-image: url(../images/Dog-snowdrops.jpg);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h2 {
+  color: #2db9ff;
+  text-align: center;
+  font-size: 6vw;
+  margin-top: 20vh;
+  font-family: "Cabin Sketch";
+}
+
+.text {
+  width: 1200px;
+  margin: 4vh auto;
+  line-height: 3vh;
+}
+
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content1 ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content1 ul li {
+  width: 28%;
+  margin-bottom: 4vh;
+}
+.content1 ul li img {
+  width: 100%;
+  margin-bottom: 1.5vh;
+}
+.content1 ul li p {
+  font-size: 0.9vw;
+  line-height: 2.5vh;
+}
+.content1 ul li .desc {
+  font-size: 0.8vw;
+  color: #636262;
+}
+
+.list {
+  padding-left: 1vw;
+}
+.list li {
+  list-style-type: decimal;
+}
+
+.content2 {
+  background-color: #bde3ff;
+  text-align: center;
+  padding: 10vh;
+  border-radius: 0.5vw;
+}
+.content2 h2 {
+  color: #42afff;
+  font-size: 2vw;
+  margin-bottom: 4vh;
+}
+.content2 .btn {
+  background-color: #0d99ff;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 2vh 2vw;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.linkBtn {
+  text-align: center;
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+}
+.linkBtn .btn2 {
+  display: none;
+}
+
+.btn2 {
+  background-color: #0d99ff;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 2vh 2vw;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.questionBox {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+}
+.questionBox .questionCenter {
+  width: 500px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vw;
+}
+.questionBox .questionCenter h2 {
+  margin-bottom: 2vh;
+  color: #2db9ff;
+}
+.questionBox .question {
+  margin-bottom: 3vh;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3vh;
+}
+.questionBox .btn {
+  width: 120px;
+  line-height: 40px;
+  background-color: #2db9ff;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.bestChioceBox {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+}
+.bestChioceBox .bestChioceCenter {
+  width: 500px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  padding: 2vw;
+}
+.bestChioceBox .bestChioceCenter .tit {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.bestChioceBox .bestChioceCenter h2 {
+  margin-bottom: 2vh;
+  color: #2db9ff;
+  text-align: center;
+}
+.bestChioceBox .bestChioce {
+  margin-bottom: 3vh;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3vh;
+}
+
+.footer {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 0.8vw;
+  line-height: 2.5vh;
+  background-color: #2db9ff;
+  padding: 2vh 0;
+}
+
+@media (max-width: 900px) {
+  .header2 {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .header {
+    width: 100% !important;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    transition: all 0.3s;
+  }
+  .header ul {
+    flex-direction: column;
+  }
+  .header ul li {
+    padding: 0 50px;
+  }
+  .header ul li:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header ul li img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+} /*# sourceMappingURL=style.css.map */
