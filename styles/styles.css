@@ -73,7 +73,7 @@ html {
   display: none;
 }
 
-.header2 {
+.header-lg {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -82,23 +82,23 @@ html {
   justify-content: space-between;
 }
 
-.header2 .active a {
+.header-lg .active a {
   color: #000;
   background-color: #ade4ff;
 }
 
-.header2 ul {
+.header-lg ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.header2 ul li {
+.header-lg ul li {
   width: 100%;
   height: 100%;
 }
 
-.header2 ul a {
+.header-lg ul a {
   color: #fff;
   font-size: 20px;
   display: inline-block;
@@ -107,7 +107,7 @@ html {
   text-align: center;
 }
 
-.header2 ul a:hover {
+.header-lg ul a:hover {
   background: #ade4ff;
   color: #000;
 }
@@ -126,11 +126,11 @@ html {
   box-shadow: 0 0 10px #ccc;
 }
 
-.banner1 {
+.banner-index {
   background-image: url(../images/Dog-snowdrops.jpg);
 }
 
-.banner2 {
+.banner-selector {
   background-image: url(../images/Dog-snowdrops.jpg);
 }
 
@@ -156,7 +156,7 @@ html {
   font-family: "Cabin Sketch";
 }
 
-.text {
+.article {
   width: 1200px;
   margin: 4vh auto;
   line-height: 3vh;
@@ -167,24 +167,28 @@ html {
   margin: 0 auto;
 }
 
-.content1 ul {
+.dog-list ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content1 ul li {
+
+.dog-list ul li {
   width: 28%;
   margin-bottom: 4vh;
 }
-.content1 ul li img {
+
+.dog-list ul li img {
   width: 100%;
   margin-bottom: 1.5vh;
 }
-.content1 ul li p {
+
+.dog-list ul li p {
   font-size: 0.9vw;
   line-height: 2.5vh;
 }
-.content1 ul li .desc {
+
+.dog-list ul li .desc {
   font-size: 0.8vw;
   color: #636262;
 }
@@ -192,22 +196,25 @@ html {
 .list {
   padding-left: 1vw;
 }
+
 .list li {
   list-style-type: decimal;
 }
 
-.content2 {
+.section {
   background-color: #bde3ff;
   text-align: center;
   padding: 10vh;
   border-radius: 0.5vw;
 }
-.content2 h2 {
+
+.section h2 {
   color: #42afff;
   font-size: 2vw;
   margin-bottom: 4vh;
 }
-.content2 .btn {
+
+.section .btn {
   background-color: #0d99ff;
   color: #fff;
   text-align: center;
@@ -222,6 +229,7 @@ html {
   margin-top: 8vh;
   margin-bottom: 2vh;
 }
+
 .linkBtn .btn2 {
   display: none;
 }
@@ -246,24 +254,30 @@ html {
   position: fixed;
   display: none;
 }
+
 .questionBox .questionCenter {
   width: 500px;
+  max-height: 100%;
   background-color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 2vw;
+  overflow: auto;
 }
+
 .questionBox .questionCenter h2 {
   margin-bottom: 2vh;
   color: #2db9ff;
 }
+
 .questionBox .question {
   margin-bottom: 3vh;
   border-bottom: 1px solid #ccc;
   padding-bottom: 3vh;
 }
+
 .questionBox .btn {
   width: 120px;
   line-height: 40px;
@@ -271,7 +285,8 @@ html {
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  cursor: pointer;
+  border: 1px solid #2db9ff;
+  display: block;
 }
 
 .bestChioceBox {
@@ -284,6 +299,7 @@ html {
   position: fixed;
   display: none;
 }
+
 .bestChioceBox .bestChioceCenter {
   width: 500px;
   background-color: #fff;
@@ -293,15 +309,18 @@ html {
   transform: translate(-50%, -50%);
   padding: 2vw;
 }
+
 .bestChioceBox .bestChioceCenter .tit {
   text-align: center;
   margin-bottom: 3vh;
 }
+
 .bestChioceBox .bestChioceCenter h2 {
   margin-bottom: 2vh;
   color: #2db9ff;
   text-align: center;
 }
+
 .bestChioceBox .bestChioce {
   margin-bottom: 3vh;
   border-bottom: 1px solid #ccc;
@@ -317,13 +336,65 @@ html {
   padding: 2vh 0;
 }
 
+.radios label {
+  display: block;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.radios label input {
+  vertical-align: middle;
+}
+
+.radios label strong {
+  margin: 0 .5em;
+}
+
+.bestChioceBox .close {
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  cursor: pointer;
+  display: none;
+}
+
+.bestChioceBox .close img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 @media (max-width: 900px) {
-  .header2 {
+
+  .w1200,
+  .banner,
+  .bannerOuter,
+  .article,
+  .questionBox .questionCenter ,
+  .bestChioceBox .bestChioceCenter {
+    width: 100%;
+  }
+
+  .questionBox .questionCenter {
+    width: 100%;
+  }
+
+  .article {
+    padding: 0 15px;
+  }
+
+  .banner-index,
+  .banner-selector {
+    background-position: center center;
+  }
+
+  .header-lg {
     display: none;
   }
+
   .menuIcon {
     display: block;
   }
+
   .header {
     width: 100% !important;
     height: 40px;
@@ -331,20 +402,36 @@ html {
     display: block;
     transition: all 0.3s;
   }
+
   .header ul {
     flex-direction: column;
   }
+
   .header ul li {
+    width: 100%;
     padding: 0 50px;
+  }
+  .header ul li a{
+    width: 100%;
+    padding:0 15px;
+  }
+  .header ul li.active a{
+    text-align: left;
   }
   .header ul li:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .header ul li img {
     width: 30px;
     height: 30px;
     cursor: pointer;
+  }
+
+  .dog-list ul li {
+    width: 100%;
+    padding: 0 15px;
   }
 }

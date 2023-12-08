@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Breed Information</title>
     <meta name="description" content="DogLover's Guide Breed Information" />
-    <link rel="stylesheet" href="styles.normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/scripts.js" defer></script>
   </head>
 
   <body>
     <div class="headerOuter">
-      <div class="header2">
+      <div class="header-lg">
         <ul>
           <li ><a href="./index.html">Home</a></li>
           <li><a href="./breed-selector.html">Breed Selector</a></li>
@@ -34,18 +34,18 @@
       </div>
     </div>
     <div class="bannerOuter">
-      <div class="banner1 banner">
+      <div class="banner-index banner">
         <h2>Additional Resources</h2>
       </div>
     </div>
-    <div class="text">
+    <div class="article">
       <p>
         Discover a treasure trove of canine wisdom and support on our Additional Resources page. Whether you're a seasoned dog owner or a 
         newcomer to the world of canine companionship, here you'll find a handpicked selection of tools, guides, and communities to enrich 
         your journey.
       </p>
     </div>
-    <div class="content1">
+    <div class="dog-list">
       <ul class="w1200">
         <li>
           <div class="img">
@@ -88,16 +88,4 @@
       <p>DOG BREED INFORMATION CREDITS: AMERICAN KENNEL CLUB</p>
     </div>
   </body>
-  <script>
-   var menuIcon = document.querySelector(".menuIcon");
-    var header = document.querySelector(".header");
-    var body = document.querySelector(".body");
-    menuIcon.addEventListener("click", () => {
-      if (header.style.height === "200px") {
-        header.style.height = "40px";
-      } else {
-        header.style.height = "200px";
-      }
-    });
-  </script>
 </html>
