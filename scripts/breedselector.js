@@ -82,8 +82,6 @@ const answers = [
     { 'answer': '1-C, 2-C, 3-C, 4-C', 'dog': 'Bullmastiff,Leonberger,Irish Setter' },
 ];
 
-
-
 const questionBox = document.querySelector(".questionBox");
 const bestChioceBox = document.querySelector(".bestChioceBox");
 const closeBtn = document.querySelector('.bestChioceBox .close');
@@ -106,6 +104,7 @@ questionBox.addEventListener("click", (e) => {
 submit.addEventListener("click", (e) => {
 
 });
+
 closeBtn.addEventListener('click', (e) => {
     bestChioceBox.style.display = "none";
     questionBox.style.display = "none";

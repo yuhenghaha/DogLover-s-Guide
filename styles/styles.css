@@ -74,6 +74,7 @@ html {
 }
 
 .header-lg {
+  max-width: 75%;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -113,14 +114,16 @@ html {
 }
 
 .banner {
+  max-width: 96.666666%;
   width: 1160px;
   height: 450px;
   background-size: cover;
 }
 
 .bannerOuter {
-  padding: 20px;
+  max-width: 75%;
   width: 1200px;
+  padding: 20px;
   margin: 20px auto;
   border-radius: 5px;
   box-shadow: 0 0 10px #ccc;
@@ -157,12 +160,19 @@ html {
 }
 
 .article {
+  font-family: 'Cabin', sans-serif;
+  max-width: 75%;
   width: 1200px;
   margin: 4vh auto;
   line-height: 3vh;
 }
 
+.article em {
+  font-size: 1.2em;
+}
+
 .w1200 {
+  max-width: 75%;
   width: 1200px;
   margin: 0 auto;
 }
@@ -184,12 +194,19 @@ html {
 }
 
 .dog-list ul li p {
-  font-size: 0.9vw;
+  font-size: 1vw;
+  line-height: 2.5vh;
+}
+
+.dog-list ul li .name {
+  font-family: 'Cabin', sans-serif;
+  font-weight: semibold;
+  font-size: 1.5vw;
   line-height: 2.5vh;
 }
 
 .dog-list ul li .desc {
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   color: #636262;
 }
 
@@ -203,6 +220,7 @@ html {
 
 .section {
   background-color: #bde3ff;
+  background-image: url(../images/dogs.png);
   text-align: center;
   padding: 10vh;
   border-radius: 0.5vw;
@@ -430,8 +448,27 @@ html {
     cursor: pointer;
   }
 
+  .section h2 {
+    font-size: 1.5em;
+  }
+
   .dog-list ul li {
     width: 100%;
     padding: 0 15px;
+  }
+
+  .dog-list ul li p,
+  .dog-list ul li .desc {
+    font-size: 1.05rem;
+  }
+
+  .dog-list ul li .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2.5vh;
+  }
+
+  .footer {
+    font-size: 0.8rem;
   }
 }
