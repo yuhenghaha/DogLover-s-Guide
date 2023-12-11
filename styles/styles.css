@@ -354,6 +354,11 @@ html {
   padding: 2vh 0;
 }
 
+.footer a:hover {
+  background: #edc58a;
+  color: #fff;
+}
+
 .radios label {
   display: block;
   margin-bottom: 1em;
