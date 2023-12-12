@@ -101,10 +101,6 @@ questionBox.addEventListener("click", (e) => {
     }
 });
 
-submit.addEventListener("click", (e) => {
-
-});
-
 closeBtn.addEventListener('click', (e) => {
     bestChioceBox.style.display = "none";
     questionBox.style.display = "none";
@@ -112,6 +108,7 @@ closeBtn.addEventListener('click', (e) => {
     tit.innerHTML = '';
 });
 console.log(answers.length);
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const q1 = form.question1.value;
